@@ -1,0 +1,1 @@
+web: gunicorn health_And_Wellness.wsgi --log-file-
