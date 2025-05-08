@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-wj82qep!t9jf&lek8!^x8xi&2f7%p1*7_3g#=#btg@2chv3*7x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -130,3 +130,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",  # Allow your frontend (if any)
+]
+CORS_ALLOW_CREDENTIALS = True
